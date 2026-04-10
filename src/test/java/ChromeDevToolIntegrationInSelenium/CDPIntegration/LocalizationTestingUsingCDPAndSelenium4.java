@@ -33,6 +33,7 @@ public class LocalizationTestingUsingCDPAndSelenium4 {
 		// Go to netflix
 		driver.get("https://www.google.com");
 		driver.findElement(By.name("q")).sendKeys("Netflix", Keys.ENTER);  // reCAPTCH issue
+		devToolObj.disconnectSession();
 	
 		
 	}
